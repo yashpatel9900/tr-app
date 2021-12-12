@@ -20,19 +20,7 @@ export default function HeaderComponent() {
                                     <li ><Link href="/">home</Link></li>
                                     <li  ><Link href="/about">about</Link></li>
                                     <li><a href="https://trivediravi.com/my-calendar/">Calendar</a></li>
-                                    <li><a href="https://trivediravi.com/services/">services</a>
-                                        {/* <ul className="submenu">
-                                            <li><a href="https://trivediravi.com/kundali">Kundali</a></li>
-                                            <li><a href="https://trivediravi.com/vastu-shastra">Vastu Shastra</a></li>
-                                            <li><a href="https://trivediravi.com/career">Career Guidelines</a></li>
-                                            <li><a href="https://trivediravi.com/finance-report/">Finance Report</a></li>
-                                            <li><a href="https://trivediravi.com/business-report/">Business Report</a></li>
-                                            <li><a href="https://trivediravi.com/birth-star-report/">Birth Star Report</a></li>
-                                            <li><a href="https://trivediravi.com/numerology-report/">Numerology Report</a></li>
-                                            <li><a href="https://trivediravi.com/vedic-astrology/">Vedic Astrology</a></li>
-                                            <li><a href="https://trivediravi.com/horoscope/">Horoscope</a></li>
-                                        </ul> */}
-                                    </li>
+                                    <li><a href="https://trivediravi.com/services/">services</a></li>
                                     <li><a href="https://trivediravi.com/blog/">blog</a></li>
                                     <li><a href="https://trivediravi.com/appointment/">appointment</a></li>
                                     <li><Link href="/contact">contact-us</Link></li>

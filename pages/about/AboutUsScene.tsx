@@ -43,9 +43,9 @@ const AboutUsScene = () => {
                             </ul>
                         </div>
                         <div className="col-lg-6 col-md-6 col-12">
-                            <video width="100%" controls>
-                                <source src="mov_bbb.mp4" type="video/mp4" />
-                                <source src="mov_bbb.ogg" type="video/ogg" />
+                            <video width="100%" className="mt-5" controls>
+                                <source src="https://trivediravi.com/wp-content/uploads/2020/11/about-video.mp4" type="video/mp4" />
+                                {/* <source src="mov_bbb.ogg" type="video/ogg" /> */}
                                 Your browser does not support HTML video.
                             </video>
                         </div>
