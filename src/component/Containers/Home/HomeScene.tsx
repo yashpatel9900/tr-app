@@ -231,16 +231,10 @@ const AboutUsScene = (props: any) => {
                   Today's Expert Tips
                 </div>
                 <div>
+                  <span>Here is today's expert tips from our astroguru Mr. Trivedi Ravi. For more tips please contact on 9574744469</span>
                 <img alt="loading" width="240" src="https://trivediravi.com/wp-content/themes/astro/images/experttips/11.jpg" />
                 </div>
               </div>
-            </div>
-            <div className="col-lg-6 col-md-6 col-12">
-              <video width="100%" controls>
-                <source src="mov_bbb.mp4" type="video/mp4" />
-                <source src="mov_bbb.ogg" type="video/ogg" />
-                Your browser does not support HTML video.
-              </video>
             </div>
           </div>
           <HomeBottomCarousel />
