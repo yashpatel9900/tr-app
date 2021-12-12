@@ -18,13 +18,18 @@ const HomeScene = (props: any) => {
       <div className={AboutusStyles.astVastuWrapper}>
         <div className="container">
           <div className="row">
+          <br/>
             <h2 className={AboutusStyles.title}>Daily Routines </h2>
+            <br/>
             <h4 className="text-center">
               Trivedi Ravi had studied vedic astrology, KP astrology, Navmansha
               method, arudh pada, Sarvatobhadra chakra, Muhurat shastr,
               Numerology, Lo shu grid, Vastu shastr.
             </h4>
-            <div className="col-lg col-md-4 ">
+            <br/>
+            <br/>
+
+            <div className="col-lg col-md-4 mt-5">
               <div
                 style={{
                   border: "1px solid lightgray",
@@ -106,7 +111,7 @@ const HomeScene = (props: any) => {
                 </div>
               </div>
             </div>
-            <div className="col-lg col-md-8 ">
+            <div className="col-lg col-md-8 mt-5">
               <div
                 style={{
                   border: "1px solid lightgray",
@@ -216,7 +221,7 @@ const HomeScene = (props: any) => {
                 </div>
               </div>
             </div>
-            <div className="col-lg col-md-8 ">
+            <div className="col-lg col-md-8 mt-5">
               <div
                 style={{
                   border: "1px solid lightgray",
@@ -230,8 +235,11 @@ const HomeScene = (props: any) => {
                 <div className="bg-warning bg-lighten-lg text-white p-2 ml-2">
                   Today's Expert Tips
                 </div>
-                <div>
-                  <span>Here is today's expert tips from our astroguru Mr. Trivedi Ravi. For more tips please contact on 9574744469</span>
+                <br/>
+                <div style={{width : "90%" , margin:"auto"}}>
+                  <small >Here is today's expert tips from our astroguru Mr. Trivedi Ravi. For more tips please contact on 9574744469</small>
+                  <br/>
+                  <br/>
                 <img alt="loading" width="240" src="https://trivediravi.com/wp-content/themes/astro/images/experttips/11.jpg" />
                 </div>
               </div>
