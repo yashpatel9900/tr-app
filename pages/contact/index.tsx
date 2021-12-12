@@ -3,7 +3,6 @@ import React from 'react'
 import HeaderComponent from '../../Components/Layout/Header/HeaderComponent';
 import AboutusStyles from './ContactUs.module.scss';
 
-
 const AboutUsScene = () => {
     return (
         <>

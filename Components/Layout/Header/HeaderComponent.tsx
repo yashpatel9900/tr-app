@@ -18,14 +18,8 @@ export default function HeaderComponent() {
                             <div className="ast_menu w-100 float-start position-relative">
                                 <ul>
                                     <li ><Link href="/">home</Link></li>
-                                    <li  ><Link href="/about/">about</Link>
-                                        {/* <ul className="submenu">
-                                            <li><a href="https://trivediravi.com/achievements/">Achievements</a></li>
-                                            <li><a href="https://trivediravi.com/video-gallery/">Video Gallery</a></li>
-                                        </ul> */}
-                                    </li>
+                                    <li  ><Link href="/about">about</Link></li>
                                     <li><a href="https://trivediravi.com/my-calendar/">Calendar</a></li>
-
                                     <li><a href="https://trivediravi.com/services/">services</a>
                                         {/* <ul className="submenu">
                                             <li><a href="https://trivediravi.com/kundali">Kundali</a></li>
@@ -41,7 +35,7 @@ export default function HeaderComponent() {
                                     </li>
                                     <li><a href="https://trivediravi.com/blog/">blog</a></li>
                                     <li><a href="https://trivediravi.com/appointment/">appointment</a></li>
-                                    <li><a href="https://trivediravi.com/contact/">contact-us</a></li>
+                                    <li><Link href="/contact">contact-us</Link></li>
                                 </ul>
                             </div>
                         </div>
