@@ -1,10 +1,10 @@
 import React from 'react'
-import  AboutUsScene  from './AboutUsScene';
+import  ContactUsScene  from './index';
 
  const AboutUsContainer = () => {
     return (
         <div>
-            <AboutUsScene />
+            <ContactUsScene />
         </div>
     )
 }

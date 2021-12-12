@@ -1,5 +1,5 @@
 import React from "react";
-import HomeScene from "./HomeScene";
+import HomeScene from "./Home";
 import { Carousel } from "react-bootstrap";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";

@@ -1,5 +1,6 @@
 import React from 'react'
-import HeaderStyle from './Header.module.scss'
+import HeaderStyle from './Header.module.scss' 
+import Link from "next/link";
 
 export default function HeaderComponent() {
     return (
@@ -16,8 +17,8 @@ export default function HeaderComponent() {
                         <div className="ast_main_menu_wrapper">
                             <div className="ast_menu w-100 float-start position-relative">
                                 <ul>
-                                    <li ><a href="https://trivediravi.com">home</a></li>
-                                    <li  ><a href="https://trivediravi.com/about/">about</a>
+                                    <li ><Link href="/">home</Link></li>
+                                    <li  ><Link href="/about/">about</Link>
                                         {/* <ul className="submenu">
                                             <li><a href="https://trivediravi.com/achievements/">Achievements</a></li>
                                             <li><a href="https://trivediravi.com/video-gallery/">Video Gallery</a></li>

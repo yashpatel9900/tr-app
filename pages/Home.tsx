@@ -1,13 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import HeaderComponent from "../../../../Components/Layout/Header/HeaderComponent";
-import FooterComponent from "../../../../Components/Layout/Footer/FooterComponent";
+import HeaderComponent from "../Components/Layout/Header/HeaderComponent";
+import FooterComponent from "../Components/Layout/Footer/FooterComponent";
 import AboutusStyles from "./Home.module.scss";
 import { Carousel } from "react-bootstrap";
 import HomeHeaderCarousel from "./HomeHeaderCarousel";
 import HomeBottomCarousel from "./HomeBottomCarousel";
 
-const AboutUsScene = (props: any) => {
+const HomeScene = (props: any) => {
   const { handleSubmit, pristine, reset, submitting } = props;
 
   return (
@@ -608,4 +608,4 @@ const AboutUsScene = (props: any) => {
   );
 };
 
-export default AboutUsScene;
+export default HomeScene;

@@ -1,10 +1,10 @@
 import React from 'react'
-import  HomeScene  from './HomeScene';
+import  AboutUsScene  from './AboutUsScene';
 
- const AboutUsContainer = () => {
+const AboutUsContainer = () => {
     return (
         <div>
-            <HomeScene />
+            <AboutUsScene />
         </div>
     )
 }

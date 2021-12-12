@@ -1,8 +1,8 @@
 import React from 'react'
-import  HomeScene  from './HomeScene';
+import  HomeScene  from './Home';
 import { Carousel } from "react-bootstrap";
 
- const HomeHeaderCarousel = () => {
+const HomeHeaderCarousel = () => {
     return (
         <Carousel>
         <Carousel.Item>

@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
-import HeaderComponent from '../../../../Components/Layout/Header/HeaderComponent';
-import AboutusStyles from './AboutUs.module.scss';
+import HeaderComponent from '../../Components/Layout/Header/HeaderComponent';
+import AboutusStyles from './ContactUs.module.scss';
+
 
 const AboutUsScene = () => {
     return (
