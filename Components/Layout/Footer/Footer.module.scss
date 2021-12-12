@@ -1,0 +1,81 @@
+.footer {
+    position: relative;
+    padding-top: 50px;
+    background: #FAFAFA;
+    background-image: url('/assets/Footer-bg.png');
+    background-position: bottom;
+    background-size: inherit;
+    background-position-y: 230px;
+    background-repeat: repeat-x;
+    @media (min-width: 256px) and (max-width: 767px) {
+        background-position-y: bottom;
+        background-size: contain;
+    }
+    .footerAboutUs, .footerLinks {
+        margin-bottom: 45px;
+    }
+    .footerAboutUs{
+        h2 {
+            position: relative;
+            margin-bottom: 45px;
+            padding-bottom: 15px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #999999;
+          }
+        .footerContent {
+            width: 400px;
+            text-decoration: none;
+            @media (min-width: 256px) and (max-width: 767px) { 
+                width: 100%;
+            }
+        }
+        .socialLogo {
+            a {
+                .socialIcon {
+                    width: 15%;
+                    padding: 8px;
+                    @media (min-width: 256px) and (max-width: 767px) { 
+                        width: 20% !important;
+                        padding: 8px;
+                    }
+                }
+            }
+        }
+        p   {
+            margin-bottom: 5px;
+        }
+        .FooterLogo {
+            width: 160px;
+            height: auto;
+            margin-bottom: 20px;
+          }
+    }
+    .footerLinks {
+        p   {
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #656565;
+            i {
+                width: 20px;
+            }
+          }
+        a {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #656565;
+            :hover {
+                text-decoration: none;
+            }
+        }
+    }
+    h2 {
+        position: relative;
+        padding-bottom: 15px;
+        font-size: 20px;
+        font-weight: 600;
+        color: black;
+    }
+  }
