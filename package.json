@@ -22,11 +22,13 @@
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
     "react-select": "^5.2.1",
+    "react-simple-chatbot": "^0.6.1",
     "redux": "^4.1.2",
     "redux-form": "^8.3.8",
     "redux-form-website-template": "^0.0.41",
     "redux-thunk": "^2.4.1",
-    "sass": "^1.43.3"
+    "sass": "^1.43.3",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@types/react": "17.0.31",
