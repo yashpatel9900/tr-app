@@ -1,24 +1,35 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HeaderComponent from "../../Components/Layout/Header/HeaderComponent";
+import Select from "react-select";
 import AboutusStyles from "./AboutUs.module.scss";
-import axios from "axios";
-// https://replit.com/@sandeepmehta215/productSeller#auth.js
-const AboutUsScene = () => {
-  const [data, setData] = useState();
-  useEffect(async () => {
-    const resp = await axios.get(
-      "https://ravitrivedi.sandeepmehta1.repl.co/getblog"
-    );
-    console.log(resp.data);
 
-    if (resp.status === 201) setData(resp?.data?.blogs);
-    return () => {};
-  }, [data]);
+const AboutUsScene = () => {
+  const options = [
+    { value: "male", label: "Male" },
+    { value: "feMale", label: "Female" },
+  ];
+
+  const optionsTwo = [
+    { value: "morning", label: "Morning" },
+    { value: "afternoon", label: "Afternoon" },
+    { value: "evening", label: "Evening" },
+
+  ];
+
+  const optionsThree = [
+    { value: "toCastBirthChart", label: "to cast Birth Chart" },
+    { value: "toKnowCarrier", label: "to know Career Line" },
+    { value: "toKnowMarraigeYog", label: "to Know Marraige Yog" },
+    { value: "toKnowMarraigeLife", label: "to Know Marraige Life" },
+    { value: "toKnowAboutChild", label: "to Know About Child" },
+    { value: "toKnowRecoveryHealth", label: "to Know Recvery Of Health" },
+    { value: "toKnowCourtCasesResults", label: "to Know Court Cases Results" },
+    { value: "toKnowForeignYog", label: "to Know Foreign Yog" },
+  ];
   return (
     <>
       <HeaderComponent />
-
       <div className={AboutusStyles.astPagetitle}>
         <div className={AboutusStyles.astImgOverlay}></div>
         <div className="container">
@@ -42,27 +53,63 @@ const AboutUsScene = () => {
           </div>
         </div>
       </div>
-      <div className={AboutusStyles.astVastuWrapper}>
-        <div className="container">
-          <div className="column">
-            <div style={{ width: "90%" }}>
-              {data && data.length > 0
-                ? data.map((blog) => {
-                    return (
-                      <>
-                        <span style={{ width: "40%" }}>
-                          <img src={blog.imageurl} width="40%" />  <br/>
-                          <h1>{blog.heading}</h1> <br/>
-                          <span style={{width : "40%" }}>{blog.description.slice(0,78)}...</span>  <br/> 
-                          <button>Read More</button>  <br/>  <br/>
-                        </span>
-                      </>
-                    );
-                  })
-                : "No data"}
-            </div>
-          </div>
+      <div style={{ width: "80%", margin: "auto" }}>
+        <h1>make your appointment to discuss any problem.</h1>
+        Person can approach to our core astrologer by using e-mail address
+        info@trivediravi.com or can use whats App number 9574744469.Please refer
+        to the Terms of Use. Email addresses are kept private and never used for
+        mailing lists, unless you formally subscribe to our email newsletter
+        (not currently active), in which case your email address is used solely
+        for this purpose. I do not sell email address lists. Additionally, birth
+        information submitted to us, whether through report orders or natal
+        chart help, is only used for the intended purpose.
+      </div>{" "}
+      <br /> <br />
+      <div style={{ width: "80%", margin: "auto", marginBottom: "6rem" }}>
+        <h2>Appointment Form</h2>
+        <input
+          style={{ width: "40%" }}
+          type="text"
+          placeholder="Enter your name"
+          className="form-control"
+          id="formGroupExampleInput"
+        />{" "}
+        <br />
+        <input
+          style={{ width: "40%" }}
+          type="text"
+          placeholder="Enter your email"
+          className="form-control"
+          id="formGroupExampleInput"
+        />{" "}
+        <br />
+        <input
+          style={{ width: "40%" }}
+          type="text"
+          placeholder="Enter your mobile number"
+          className="form-control"
+          id="formGroupExampleInput"
+        />
+        <br />
+        <div style={{ width: "40%" }}>
+          <Select style={{ width: "40%" }} placeholder="Select Gender" options={options} />
+        </div> <br/>
+        <div style={{ width: "40%" }}>
+          <Select style={{ width: "40%" }} placeholder="Convenient Time" options={optionsTwo} />
+        </div> <br/>
+        <div style={{ width: "40%" }}>
+          <Select style={{ width: "40%" }} placeholder="Reason For Appointment" options={optionsThree} />
         </div>
+        <br /> <br />
+        <input
+          style={{ width: "40%" , backgroundColor : "#ffad29", color:"white" }}
+          type="button"
+          placeholder="Place Appointment"
+          value="Place Appointment"
+          className="form-control"
+          id="formGroupExampleInput"
+        />
+        <br />
       </div>
       {/* <!-- Footer wrapper start--> */}
       <div className={AboutusStyles.astFooterWrapper}>
