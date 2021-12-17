@@ -21,7 +21,7 @@ export default function HeaderComponent() {
                                     <li  ><Link href="/about">about</Link></li>
                                     <li><a href="https://trivediravi.com/my-calendar/">Calendar</a></li>
                                     <li><Link href="/services">services</Link></li>
-                                    <li><a href="https://trivediravi.com/blog/">blog</a></li>
+                                    <li><a href="/blog">blog</a></li>
                                     <li><a href="https://trivediravi.com/appointment/">appointment</a></li>
                                     <li><Link href="/contact">contact-us</Link></li>
                                 </ul>
