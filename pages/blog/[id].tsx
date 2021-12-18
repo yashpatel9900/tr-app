@@ -1,20 +1,23 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useRouter } from "next/dist/client/router";
 import HeaderComponent from "../../Components/Layout/Header/HeaderComponent";
 import AboutusStyles from "./AboutUs.module.scss";
+import { useState, useEffect } from "react";
 import Loader from "react-loader-spinner";
-import { useRouter } from "next/dist/client/router";
-import axios from "axios";
-// https://replit.com/@sandeepmehta215/productSeller#auth.js
-const AboutUsScene = () => {
-  const [data, setData] = useState();
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const BlogRoute = () => {
   const router = useRouter();
+  const { id } = router.query;
+  const [data, setData] = useState();
   useEffect(async () => {
     const resp = await axios.get(
       "https://ravitrivedi.sandeepmehta1.repl.co/getblog"
     );
 
-    if (resp.status === 201) setData(resp?.data?.blogs);
+    if (resp.status === 201) {
+      setData(resp?.data?.blogs);
+    }
     return () => {};
   }, [data]);
   return (
@@ -50,34 +53,38 @@ const AboutUsScene = () => {
           className="d-flex flex-wrap justify-content-between"
         >
           {data && data.length > 0 ? (
-            data.map((blog) => {
-              return (
-                <>
-                  <span style={{}}>
-                    <img src={blog.imageurl} width="400rem" height="200rem" />{" "}
-                    <br />
-                    <h1>{blog.heading}</h1> <br />
-                    <span style={{ width: "40%" }}>
-                      {blog.description.slice(0, 48)}...
-                    </span>{" "}
-                    <br />
-                    <button
-                      style={{
-                        padding: "0.5rem",
-                        backgroundColor: "#ffad29",
-                        color: "white",
-                        border: "none",
-                        marginTop: "1rem",
-                      }}
-                      onClick={() =>router.push(`/blog/${blog._id}/?blog=${blog._id}`)}
-                    >
-                      Read More
-                    </button>{" "}
-                    <br /> <br />
-                  </span>
-                </>
-              );
-            })
+            data
+              .filter((blog) => blog._id === id)
+              .map((blog) => {
+                return (
+                  <>
+                    <span style={{}}>
+                      <img src={blog.imageurl} width="400rem" height="200rem" />{" "}
+                      <br />
+                      <h1>{blog.heading}</h1> <br />
+                      <span style={{ width: "40%" }}>
+                        {blog.description}
+                      </span>{" "}
+                      <br />
+                      <button
+                        style={{
+                          padding: "0.5rem",
+                          backgroundColor: "#ffad29",
+                          color: "white",
+                          border: "none",
+                          marginTop: "1rem",
+                        }}
+                        onClick={() =>
+                          router.push(`/blog`)
+                        }
+                      >
+                        Go back
+                      </button>{" "}
+                      <br /> <br />
+                    </span>
+                  </>
+                );
+              })
           ) : (
             <div style={{ margin: "auto" }}>
               <h1>Loading your blogs</h1>
@@ -442,5 +449,4 @@ const AboutUsScene = () => {
     </>
   );
 };
-
-export default AboutUsScene;
+export default BlogRoute;
