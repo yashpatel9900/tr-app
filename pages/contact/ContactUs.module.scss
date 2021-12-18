@@ -1,222 +1,353 @@
 .astPagetitle {
-    float: left;
-    width: 100%;
-    background-color: #272727;
-    position: relative;
-    background-attachment: fixed;
-    background-size: cover;
-    color: #ffffff;
-    padding: 50px 0px 50px 0px;
-    background-image: url('/assets/innerbg.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    text-align: center;
-    .astImgOverlay {
-        position: absolute;
+  float: left;
+  width: 100%;
+  background-color: #272727;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #ffffff;
+  padding: 50px 0px 50px 0px;
+  background-image: url("/assets/innerbg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  .astImgOverlay {
+    position: absolute;
     top: 0%;
     left: 0%;
     right: 0%;
     bottom: 0%;
     background-color: rgba(0, 0, 0, 0.5);
+  }
+  .pageTitle {
+    &h1 {
+      color: #ffffff !important;
     }
-    .pageTitle {
-        &h1 {
-            color: #ffffff !important;
-        }
-    }
-   
+  }
 }
 .astVastuWrapper {
-    float: left;
-width: 100%;
-background-color: #ffffff;
-padding-bottom: 50px;
-padding-top: 30px;
-.title {
+  float: left;
+  width: 100%;
+  background-color: #ffffff;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  .title {
     margin-bottom: 20px;
     text-align: center;
-}
-    .List {
-        position: relative;
-        display: block!important;
-        margin: 0!important;
-        padding: 4px 0 4px 2em !important;
-        list-style-type: none!important;
-        .bulletPoints {
-            line-height: 1.6em;
-            position: relative;
-            display: block!important;
-            margin: 0!important;
-            padding: 4px 0 4px 2em !important;
-            list-style-type: none!important;
-            font-size: 14px;
-            .sunImg {
-                width: 14px;
-            }
-        }
+  }
+  .List {
+    position: relative;
+    display: block !important;
+    margin: 0 !important;
+    padding: 4px 0 4px 2em !important;
+    list-style-type: none !important;
+    .bulletPoints {
+      line-height: 1.6em;
+      position: relative;
+      display: block !important;
+      margin: 0 !important;
+      padding: 4px 0 4px 2em !important;
+      list-style-type: none !important;
+      font-size: 14px;
+      .sunImg {
+        width: 14px;
+      }
     }
-.cta {
+  }
+  .cta {
     background: #000;
     padding: 20px;
     float: left;
     width: 100%;
     h3 {
-        float: left;
-    font-size: 32px;
-    color: #ffc66a;
-    width: auto;
+      float: left;
+      font-size: 32px;
+      color: #ffc66a;
+      width: auto;
     }
     a {
-        color: #FFFFFF;
-    background-color: #ffad29;
-    border-color: #cc8b21;
-    float: right;
-    span {
-        color: #FFFFFF;
-    padding: 8px 24px;
-    font-size: 18px;
-    line-height: 27px;
-    border-color: #ffc66a;
-    border-radius: 9px;
+      color: #ffffff;
+      background-color: #ffad29;
+      border-color: #cc8b21;
+      float: right;
+      span {
+        color: #ffffff;
+        padding: 8px 24px;
+        font-size: 18px;
+        line-height: 27px;
+        border-color: #ffc66a;
+        border-radius: 9px;
+      }
     }
-    }
+  }
 }
+.astContactWrapper {
+  float: left;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  .astHeading {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    .astSubHeading {
+      float: left;
+      width: 100%;
+      margin: 0px;
+      font-size: 18px;
+      font-family: "Philosopher", sans-serif;
+      font-weight: 600;
+    }
+  }
+  .astContactInfo {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    .ConatctusIcon {
+      display: inline-block;
+      width: 90px;
+      height: 90px;
+      line-height: 75px;
+      font-size: 36px;
+      border-radius: 100%;
+      border: 5px solid #ffffff;
+      background-color: #ffffff;
+      .phoneIcon {
+        color: #ffad29;
+        width: 25px;
+      }
+    }
+  }
+  .iconText {
+    float: left;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin: 35px 0px 15px 0px;
+  }
+}
+.astMapnformWrapper {
+  float: left;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 30px 0;
+  .astHeading {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .astSubHeading {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    font-size: 18px;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 600;
+  }
+  .astContactForm {
+    width: 100%;
+    float: left;
+    position: relative;
+    background-color: #ffffff;
+    padding: 50px;
+    margin: 0px auto;
+    border-radius: 3px;
+    box-shadow: 0px 0px 30px -10px #000000;
+    .contactusFormLabel {
+      float: left;
+      width: 100%;
+      text-transform: capitalize;
+      color: #333333;
+      font-weight: 600;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+    .formWrap {
+      position: relative;
+      float: left;
+      margin-bottom: 20px;
+      width: 100%;
+      .contactFormInput {
+        float: left;
+        width: 100%;
+        height: 45px;
+        padding: 0px 15px;
+        border: 1px solid #e1e1e1;
+        outline: none;
+      }
+      .contactFormTextarea {
+        height: 90px !important;
+        float: left;
+        width: 100%;
+        border: 1px solid #e1e1e1;
+        margin-bottom: 15px;
+        padding: 10px 15px;
+        resize: vertical;
+        outline: none;
+      }
+    }
+    .contactusBtn {
+      display: inline-block;
+      line-height: 43px;
+      min-width: 130px;
+      background-color: #ffad29;
+      color: #ffffff;
+      text-transform: capitalize;
+      border: 1px solid #ffad29;
+      border-radius: 3px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  .contactImg {
+      width: 540px;   
+@media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 20px;
+}
+  }
 }
 // Footer
 .astFooterWrapper {
+  float: left;
+  width: 100%;
+  background-color: #222222;
+  bottom: 0;
+  z-index: -1;
+  padding-bottom: 20px;
+  padding-top: 70px;
+  .astFooterInfo {
     float: left;
     width: 100%;
-    background-color: #222222;
-    bottom: 0;
-    z-index: -1;
-    padding-bottom: 20px;
-    padding-top: 70px;
-    .astFooterInfo {
-    float:left;
-	width:100%;
-	text-align:center;
+    text-align: center;
     margin-bottom: 50px;
     .footerImg {
-        display: inline-block;
-        margin-bottom: 15px;
+      display: inline-block;
+      margin-bottom: 15px;
     }
     .astFooterPara {
-    float: left;
-    width: 100%;
-    color: #ffffff;
-    margin-bottom: 20px;
-    font-size: 14px;
+      float: left;
+      width: 100%;
+      color: #ffffff;
+      margin-bottom: 20px;
+      font-size: 14px;
     }
     .asFooterList {
+      float: left;
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      .asFooterIconList {
+        display: inline-block;
+        width: auto;
+        list-style: none;
+        .asFooterIconLink {
+          float: left;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          border-radius: 100%;
+          text-align: center;
+          background-color: #777777;
+          margin: 5px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .widget {
+    float: left;
+    width: 100%;
+    margin-bottom: 70px;
+    .widgetTitle {
+      float: left;
+      width: 100%;
+      margin-top: 0px;
+      margin-bottom: 25px;
+      font-size: 20px;
+      color: #ffffff;
+      text-transform: capitalize;
+      position: relative;
+      padding-bottom: 15px;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        width: 70px;
+        background-color: #ffad29;
+        height: 2px;
+      }
+    }
+    .astNewsLetter {
+      float: left;
+      width: 100%;
+      .widgetPara {
+        float: left;
+        width: 100%;
+        color: #ffffff;
+        margin-bottom: 25px;
+        font-size: 14px;
+      }
+      .astNewsletterBox {
+        float: left;
+        width: 100%;
+        .input {
+          float: left;
+          width: calc(100% - 65px);
+          height: 45px;
+          padding: 0px 15px;
+          border: 1px solid #ffffff;
+          color: #ffffff;
+          border-radius: 3px 0px 0px 3px;
+          background-color: transparent;
+          transition: all 0.5s;
+        }
+      }
+    }
+    .serviceLinks {
+      float: left;
+      width: 100%;
+      .serviceList {
         float: left;
         width: 100%;
         margin: 0px;
         padding: 0px;
-        .asFooterIconList{
-            display: inline-block;
-            width: auto;
-            list-style: none;
-            .asFooterIconLink {
-                float: left;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 100%;
-    text-align: center;
-    background-color: #777777;
-    margin: 5px;
-    color: #ffffff;
-            }
-        }
-    }
-    }
-    .widget {
-        float: left;
-    width: 100%;
-    margin-bottom: 70px;
-    .widgetTitle {
-        float: left;
-        width: 100%;
-        margin-top: 0px;
-        margin-bottom: 25px;
-        font-size: 20px;
-        color: #ffffff;
-        text-transform: capitalize;
-        position: relative;
-        padding-bottom: 15px;
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 0%;
-            left: 0%;
-            width: 70px;
-            background-color: #ffad29;
-            height: 2px;
-        } 
-    }
-    .astNewsLetter {
-        float: left;
-        width: 100%;
-        .widgetPara {
-            float: left;
-    width: 100%;
-    color: #ffffff;
-    margin-bottom: 25px;
-    font-size: 14px;
-        }
-        .astNewsletterBox {
+        .serviceNavLinks {
+          float: left;
+          width: 100%;
+          list-style: none;
+          .serviceActionLink {
             float: left;
             width: 100%;
-            .input {
-                float: left;
-    width: calc(100% - 65px);
-    height: 45px;
-    padding: 0px 15px;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    border-radius: 3px 0px 0px 3px;
-    background-color: transparent;
-    transition: all 0.5s;
-            }
-        }
-    }
-    .serviceLinks {
-        float: left;
-        width: 100%;
-        .serviceList {
+            color: #ffffff;
+            text-transform: capitalize;
+            padding: 5px 0px 7px 0px;
+            border-bottom: 1px solid #444444;
+            font-size: 14px;
+          }
+          .Homeicon {
             float: left;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    .serviceNavLinks {
-        float: left;
-    width: 100%;
-    list-style: none;
-    .serviceActionLink {
-        float: left;
-        width: 100%;
-        color: #ffffff;
-        text-transform: capitalize;
-        padding: 5px 0px 7px 0px;
-        border-bottom: 1px solid #444444;
-        font-size: 14px;
-    }
-    .Homeicon {
-        float: left;
-        width: 30px;
-        color: #ffad29;
-        font-size: 20px;
-        padding-top: 3px;;
-    }
-    .getInTouchText {
-        float: right;
-    width: calc(100% - 30px);
-    color: #ffffff;
-    margin-bottom: 0px;
-    font-size: 14px;
-    }
-    }
+            width: 30px;
+            color: #ffad29;
+            font-size: 20px;
+            padding-top: 3px;
+          }
+          .getInTouchText {
+            float: right;
+            width: calc(100% - 30px);
+            color: #ffffff;
+            margin-bottom: 0px;
+            font-size: 14px;
+          }
         }
+      }
     }
-    }
+  }
 }

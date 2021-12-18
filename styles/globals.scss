@@ -21,12 +21,18 @@ a {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Philosopher', sans-serif;
   font-weight: 600;
+  line-height: 1.1;
 }
-
 * {
   box-sizing: border-box;
 }
 
+.text-primary {
+color: #ffad29 !important;
+}
+.f-14 {
+  font-size: 14px !important;
+}
 //Header CSS Start //
 .ast_menu ul {
   float: right;
