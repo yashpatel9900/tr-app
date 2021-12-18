@@ -71,7 +71,7 @@ const ChatBotHelper = () => {
   return (
     <>
       <ThemeProvider theme={CHATBOT_THEME}>
-        <ChatBot steps={steps}  speechSynthesis={{ enable: true, lang: "en" }} floating={true} />
+        <ChatBot steps={steps} floating={true} />
       </ThemeProvider>
     </>
   );
