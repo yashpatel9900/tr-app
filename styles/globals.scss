@@ -26,7 +26,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 * {
   box-sizing: border-box;
 }
-
+.w-14 {
+  width: 14px;
+}
+.w-16 {
+  width: 16px;
+}
 .text-primary {
 color: #ffad29 !important;
 }
@@ -77,4 +82,16 @@ color: #ffad29 !important;
   margin: 0px;
   font-size: 36px;
   text-transform: capitalize;
+}
+
+select {
+  float: left;
+    width: 100%;
+    color: #333333;
+    height: 45px;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    padding: 0px 10px;
+    outline: none;
 }
